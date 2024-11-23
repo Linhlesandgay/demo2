@@ -1,55 +1,98 @@
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 120px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 
 body {
-  margin: 0;
-  background-color: #fff;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaT7lLZ1ZCpIr8Smirpgp0hhzWgc_FsfnCPg&s);
+  background-color: lightslategray;
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: larger;
+  background-image: url(./81a67f68a0c2b54afd22f2279b921c7a.jpg);
+  object-fit: cover;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: black;
 }
-
-.main {
-  width: 1200px;
-  min-height: 100vh;
-  max-width: 100%;
-  margin: auto;
-  padding-bottom: 20px;
+.container{
+  margin: 0px auto;
+  max-width: 960px;
 }
-
-.nav {
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  border-bottom: 1px solid #f5f5f5;
+  padding:20px 0px;
+  transition: all 0.256s ease-in-out;
+}
+header.sticky{
+  background:black ;
+  opacity: 0.9;
+  padding: 15px 0px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+header.sticky #logo{
+  color: #000;
+}
+header.sticky #main-menu a{
+  color:white;
+}
+header.sticky #main-menu a:hover{
+  cursor: pointer;
+}
+.inner-header{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 48px;
-  background-color: #333;
 }
 
-.nav__list {
+#logo{
+  background-size: cover;
+  object-fit: cover;
+  clip-path: circle(50%);
+  height: 5em;
+  width: 5em;
+}
+ul#main-menu {
   display: flex;
-  list-style: none;
 }
-
-.nav__link {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 48px;
-}
-
-/* Article */
-h1 {
-  line-height: 2rem;
-}
-
-article {
-  padding: 0 16px;
-  line-height: 1.6rem;
-}
-
-article img {
-  width: 640px;
-  max-width: 100%;
+ul#main-menu a{
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: black;
   display: block;
-  margin: 32px auto;
 }
+
+#banner{
+  background: url();
+  min-height: 100px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+#content h1{
+  padding:30px 0px;
+}
+
+#content p{
+  margin-bottom:1.2rem;
+}
+
+.nav__link{
+  margin-top: 20px;
+  margin-inline: 10px;
+}
+
